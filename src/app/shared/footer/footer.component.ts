@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PageInfo } from 'src/app/interfaces/page-info.interface';
+import { PageInfoService } from 'src/app/services/page-info.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,10 +10,12 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   year: number = new Date().getFullYear();
+  info: PageInfo;
 
-  constructor() { }
+  constructor(public pageInfoService: PageInfoService) { }
 
   ngOnInit() {
+    this.pageInfoService.getInfo().subscribe(info => this.info = info);
   }
 
 }

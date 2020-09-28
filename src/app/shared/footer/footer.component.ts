@@ -10,7 +10,7 @@ import { PageInfoService } from 'src/app/services/page-info.service';
 export class FooterComponent implements OnInit {
 
   year: number = new Date().getFullYear();
-  info: PageInfo;
+  info: PageInfo = {};
 
   constructor(public pageInfoService: PageInfoService) { }
 

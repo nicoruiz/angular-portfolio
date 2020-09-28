@@ -9,7 +9,7 @@ import { PageInfoService } from "src/app/services/page-info.service";
   styleUrls: ["./header.component.css"],
 })
 export class HeaderComponent implements OnInit {
-  info: PageInfo;
+  info: PageInfo = {};
   constructor(public pageInfoService: PageInfoService) {}
 
   ngOnInit() {

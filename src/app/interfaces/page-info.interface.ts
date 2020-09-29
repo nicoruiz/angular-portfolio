@@ -1,3 +1,5 @@
+import { WorkMember } from './workmember.interface';
+
 export interface PageInfo {
     title?: string;
     email?: string;
@@ -7,5 +9,5 @@ export interface PageInfo {
     twitter?: string;
     instagram?: string;
     tumblr?: string;
-    teamwork?: Array<any>;
+    workteam?: Array<WorkMember>;
 }

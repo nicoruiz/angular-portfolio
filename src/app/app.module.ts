@@ -10,6 +10,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
+import { SearchComponent } from './pages/search/search.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
     PortfolioComponent,
     AboutComponent,
     ItemComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

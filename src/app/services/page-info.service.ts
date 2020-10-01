@@ -9,7 +9,7 @@ import { WorkMember } from "../interfaces/workmember.interface";
 export class PageInfoService {
   infoUrl = "assets/data/data-page.json";
   workteamUrl = "https://angular-portfolio-7afee.firebaseio.com/workteam.json";
-  pageInfo: PageInfo = {};
+  pageInfo: PageInfo;
   constructor(private http: HttpClient) {
     this.getInfo();
     this.getWorkteam();

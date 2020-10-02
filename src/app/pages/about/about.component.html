@@ -1,4 +1,4 @@
-<div class="ae-grid au-xs-ta-center au-mb-4">
+<div *ngIf="service.pageInfo" class="ae-grid au-xs-ta-center au-mb-4">
   <div
     *ngFor="let member of service.pageInfo.workteam"
     class="animate__animated animate__fadeIn animate__faster ae-grid__item item-lg-4 ae-kappa au-mb-3"
@@ -58,7 +58,7 @@
 </div>
 <p class="au-flex au-pt-4 group-buttons">
   <a
-    href="portfolio.html"
+    routerLink="home"
     class="au-mt-4 arrow-button arrow-button--right arrow-button--out"
     >View Our Portfolio<span class="arrow-cont">
       <svg>
